@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hamgiin-gaduurh {
+  width: calc(100% - 90px);
+  max-width: 1525px;
+  height: 1934px;
+}
+header {
+  height: 42px;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 19px;
+  background-color: rgb(78, 66, 51);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.26rem;
+}
+i {
+  color: #fff;
+}
+.burger_menu {
+  height: 42px;
+  width: 42px;
+  align-items: center;
+  display: flex;
+}
+.mid {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 400px);
+  max-width: 1400px;
+}
+.navdar-content {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  max-width: 980px;
+  padding: 0 25px;
+}
+.logo {
+  height: 18px;
+}
+
+.search-field {
+  background: 0;
+  border: 0;
+}
+.opacity0_5 {
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+.random {
+  display: flex;
+  align-items: center;
+}
+.bold {
+  font-weight: 700;
+}
+.white {
+  color: #fff;
+}
+.random_txt {
+  margin-left: 5px !important;
+}
+.chip {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.26rem;
+  margin-left: 10px;
+}
+/* hi */
