@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font: sans-serif;
 }
 body {
   display: flex;
@@ -8,29 +9,40 @@ body {
   align-items: center;
 }
 .hamgiin-gaduurh {
-  width: calc(100% - 90px);
-  max-width: 1525px;
-  height: 1934px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.background {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), black 99%),
+    url(https://unread.today/files/ed579b98-8b6a-46a5-a2db-38fafd069ab2/530e016dcc4b4b2281684521a7a623b4.jpg);
+  position: absolute;
+  height: 80vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
 }
 header {
   height: 42px;
-  width: 100%;
+  width: calc(100% - 90px);
+  max-width: 1525px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 24px;
   margin-bottom: 19px;
-  background-color: rgb(78, 66, 51);
   align-items: center;
   display: flex;
   justify-content: space-between;
   font-size: 1.26rem;
-}
-i {
-  color: #fff;
 }
 .burger_menu {
   height: 42px;
   width: 42px;
   align-items: center;
   display: flex;
+  z-index: 1;
 }
 .mid {
   align-items: center;
@@ -48,6 +60,7 @@ i {
 }
 .logo {
   height: 18px;
+  z-index: 1;
 }
 
 .search-field {
@@ -63,22 +76,57 @@ i {
   align-items: center;
 }
 .bold {
-  font-weight: 700;
+  font-weight: 500;
 }
 .white {
   color: #fff;
+  z-index: 1;
 }
 .random_txt {
   margin-left: 5px !important;
+  font-size: 1rem;
 }
 .chip {
   display: inline-block;
   padding: 8px 18px;
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.5);
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.26rem;
+  font-weight: 300;
+  font-size: 1rem;
   margin-left: 10px;
+  z-index: 1;
+  text-decoration: none;
 }
-/* hi */
+.hero {
+  width: 100%;
+  max-width: 1200px;
+  background-color: aquamarine;
+  margin-top: 125px;
+  position: absolute;
+  display: flex;
+  gap: 61px;
+}
+.hero_img {
+  width: 40%;
+  height: auto;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://unread.today/files/ed579b98-8b6a-46a5-a2db-38fafd069ab2/530e016dcc4b4b2281684521a7a623b4.jpg);
+  border-radius: 30px;
+}
+.img_hero {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+.hero_content_container {
+  z-index: 1;
+}
+.blinker {
+  animation-name: blinker;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  color: rgb(30, 30, 255);
+}
