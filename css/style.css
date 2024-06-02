@@ -3,6 +3,7 @@
   margin: 0;
   font: sans-serif;
 }
+@import url();
 body {
   display: flex;
   flex-direction: column;
@@ -100,7 +101,6 @@ header {
 .hero {
   width: 100%;
   max-width: 1200px;
-  background-color: aquamarine;
   margin-top: 125px;
   position: absolute;
   display: flex;
@@ -123,10 +123,40 @@ header {
 .hero_content_container {
   z-index: 1;
 }
+@keyframes blinker1 {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 .blinker {
-  animation-name: blinker;
+  animation-name: blinker1;
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  color: rgb(30, 30, 255);
+  color: rgba(56, 182, 255, 0.884);
+}
+.transparent{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero_content_container h1 {
+  font-size: 3.6rem;
+    line-height: 4.3rem;
+    font-weight: 900;
+    letter-spacing: 0.09rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.hero_content_container h6{
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+
 }
