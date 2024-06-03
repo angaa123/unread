@@ -99,15 +99,17 @@ header {
   text-decoration: none;
 }
 .hero {
-  width: 100%;
-  max-width: 1600px;
-  margin-top: 125px;
-  position: absolute;
+  width: calc(100% - 300px);
+  max-width: 1400px;
+  padding: 63px;
+  margin-top: -35px;
   display: flex;
+  justify-content: space-between;
   gap: 61px;
 }
 .hero_img {
-  width: 30%;
+  z-index: 1;
+  width: 40%;
   height: auto;
   background-position: 50% 50%;
   background-size: cover;
@@ -122,7 +124,7 @@ header {
 }
 .hero_content_container {
   z-index: 1;
-  width: 50%;
+  max-width: 60%;
 }
 @keyframes blinker1 {
   0% {
@@ -159,4 +161,42 @@ header {
 .hero_content_container h6 {
   font-size: 1.2rem;
   line-height: 2.1rem;
+}
+.post_slider {
+  z-index: 1;
+  width: calc(100% - 300px);
+  max-width: 2000px;
+}
+.post_chooser {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.baruun_zuun {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 50px;
+  height: 25px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.post_chooser h5 {
+  font-size: 1.62rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 15%);
+  justify-content: space-around;
+}
+.card {
+  background-image: url(https://unread.today/files/ed579b98-8b6a-46a5-a2db-38fafd069ab2/530e016dcc4b4b2281684521a7a623b4.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
 }
