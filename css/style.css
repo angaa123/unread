@@ -97,6 +97,7 @@ header {
   margin-left: 10px;
   z-index: 1;
   text-decoration: none;
+  width: fit-content;
 }
 .hero {
   width: calc(100% - 300px);
@@ -194,9 +195,32 @@ header {
   justify-content: space-around;
 }
 .card {
-  background-image: url(https://unread.today/files/ed579b98-8b6a-46a5-a2db-38fafd069ab2/530e016dcc4b4b2281684521a7a623b4.jpg);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card1 {
+  background-image: url(https://unread.today/files/ed579b98-8b6a-46a5-a2db-38fafd069ab2/530e016dcc4b4b2281684521a7a623b4.jpg);
+}
+.blue_bc {
+  background-color: rgb(61, 61, 255);
+}
+.card_top {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.card_fooder {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#med {
+  font-size: 0.7rem;
 }
