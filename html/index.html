@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en Mongolia">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="https://unread.today/img/favicon-32x32.png" />
     <script src="https://kit.fontawesome.com/98222a6cce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/js/uikit-icons.min.js"></script>
     <title>Нүүр | Unread Today</title>
   </head>
   <body>
@@ -87,11 +92,11 @@
                 </div>
               </div>
             </div>
-            <div class="content uk-overlay uk-overlay-hover">
+            <div class="content">
               
               <a class="cover" href="https://unread.today/c/chuluut-apu-central">
-                <div class="cover uk-cover-background" style="background-image: url('https://unread.today/files/dca82359-3f6e-4c03-99ef-ef493c68a7aa/8c4209153f0263cba4043bb3989979d5_square.jpg')">
-                  <img src="https://unread.today/img/square_placeholder.png" class="uk-invisible" alt="">
+                <div class="cover" style="background-image: url('https://unread.today/files/dca82359-3f6e-4c03-99ef-ef493c68a7aa/8c4209153f0263cba4043bb3989979d5_square.jpg')">
+                  <img src="https://unread.today/img/square_placeholder.png" class="" alt="">
                 </div>
               </a>
               <div class="ankha">
@@ -107,7 +112,17 @@
           </div>
         </div>
       </div>
-      
+      <div class="pre_weeks">
+        <div class="tools uk-visible-small">
+          <div class="slider-nav"><a class="prev opacity05"><i class="uk-icon-angle-left"></i></a><a class="next opacity05"><i class="uk-icon-angle-right"></i></a></div>
+      </div>
+      <ul class="uk-tab uk-tab-grid" data-uk-tab="{connect: '#prev-weeks-articles', animation:'fade', swiping:false}" id="prevweek-tab">
+        <li class="uk-width-medium-1-4 uk-width-2-5" data-week="1" aria-expanded="false"><a href="" class="first">Өнгөрсөн 7 хоногт</a></li>
+        <li class="uk-width-medium-1-4 uk-width-2-5" data-week="" aria-expanded="false"><a href="">05/20 - 05/26</a></li>
+        <li class="uk-width-medium-1-4 uk-width-2-5 uk-hidden-small uk-active" data-week="" aria-expanded="true"><a href="">05/13 - 05/19</a></li>
+        <li class="uk-width-medium-1-4 uk-width-2-5 uk-hidden-small" data-week="" aria-expanded="false"><a href="" class="last">05/06 - 05/12</a></li>
+      <li class="uk-tab-responsive uk-active uk-hidden" aria-haspopup="true" aria-expanded="false"><a>05/13 - 05/19</a><div class="uk-dropdown uk-dropdown-small" aria-hidden="true"><ul class="uk-nav uk-nav-dropdown"></ul><div>
+      </div>
     </div>
   </body>
 </html>
