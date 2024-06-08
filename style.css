@@ -244,10 +244,11 @@ header {
 }
 /* ------------------- this week -------------------- */
 .this_week {
-	margin-top: 80px;
+	margin-top: 200px;
 }
 
 .article1 {
+	
 	font-size: 10px;
 	max-width: 1000px;
 	width: 80%;
